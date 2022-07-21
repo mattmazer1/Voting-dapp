@@ -1,0 +1,47 @@
+$Cgreen: #04aa6d;
+$Tgreen: #048858;
+
+.navBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: no-wrap;
+	align-items: center;
+	overflow: hidden;
+	background-color: #333;
+}
+.leftNav {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.walletButton {
+	border-radius: 12px;
+	border-width: 1px;
+	color: white;
+	padding: 12.5px 13px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: $Cgreen;
+}
+
+.walletButton:hover {
+	background-color: $Tgreen;
+}
+
+.walletButton:active {
+	background-color: $Tgreen;
+	transform: translateY(1px);
+}
+
+.currentCount {
+	color: white;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 18px;
+}

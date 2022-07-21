@@ -1,0 +1,15 @@
+%scount {
+	font-size: 14px;
+	margin-bottom: 2px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.soloCount1 {
+	@extend %scount;
+}
+
+.soloCount2 {
+	@extend %scount;
+}

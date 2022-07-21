@@ -1,0 +1,159 @@
+$shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+$shadowHover: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 5px 5px 5px 5px;
+}
+
+%cards {
+	box-shadow: $shadow;
+	transition: 0.3s;
+	width: 200px;
+	padding: 5px;
+	border-radius: 5px;
+	margin-top: 100px;
+	margin-right: 40px;
+	margin-left: 40px;
+}
+
+%voteButton {
+	margin: 10px;
+	border-radius: 12px;
+	border-width: 1px;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	cursor: pointer;
+	background-color: rgba(255, 81, 0, 0.938);
+}
+
+%buttonHover {
+	background-color: rgba(160, 61, 15, 0.938);
+}
+%buttonActive {
+	background-color: rgba(160, 61, 15, 0.938);
+	transform: translateY(1px);
+}
+
+%hoverEffect {
+	box-shadow: $shadowHover;
+}
+
+%alignText {
+	text-align: center;
+}
+
+.candidateCards1 {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.candidateCards2 {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card1 {
+	@extend %cards;
+}
+
+.card1:hover {
+	@extend %hoverEffect;
+}
+
+.c1 {
+	@extend %alignText;
+}
+
+.buttonC1 {
+	@extend %voteButton;
+}
+
+.buttonC1:hover {
+	@extend %buttonHover;
+}
+
+.buttonC1:active {
+	@extend %buttonActive;
+}
+.card2 {
+	@extend %cards;
+}
+
+.card2:hover {
+	@extend %hoverEffect;
+}
+
+.c2 {
+	@extend %alignText;
+}
+
+.buttonC2 {
+	@extend %voteButton;
+}
+
+.buttonC2:hover {
+	@extend %buttonHover;
+}
+
+.buttonC2:active {
+	@extend %buttonActive;
+}
+.card3 {
+	@extend %cards;
+}
+
+.card3:hover {
+	@extend %hoverEffect;
+}
+
+.c3 {
+	@extend %alignText;
+}
+
+.buttonC3 {
+	@extend %voteButton;
+}
+
+.buttonC3:hover {
+	@extend %buttonHover;
+}
+
+.buttonC3:active {
+	@extend %buttonActive;
+}
+.card4 {
+	@extend %cards;
+}
+
+.card4:hover {
+	@extend %hoverEffect;
+}
+
+.c4 {
+	@extend %alignText;
+}
+
+.buttonC4 {
+	@extend %voteButton;
+}
+
+.buttonC4:hover {
+	@extend %buttonHover;
+}
+
+.buttonC4:active {
+	@extend %buttonActive;
+}

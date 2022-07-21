@@ -1,0 +1,22 @@
+%center {
+	display: flex;
+	justify-content: center;
+	flex: wrap;
+	align-items: center;
+	align-content: center;
+}
+.notify {
+	@extend %center;
+	margin-top: 50px;
+}
+
+.splashPage {
+	@extend %center;
+	margin-top: 200px;
+	font-size: calc(9px + 1vw);
+}
+.splashInfo {
+	@extend %center;
+	margin-top: 15px;
+	font-size: calc(7px + 0.8vw);
+}

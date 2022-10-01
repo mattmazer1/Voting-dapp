@@ -16,12 +16,12 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
 module.exports = {
 	solidity: "0.8.14",
 	networks: {
-		ropsten: {
-			url: process.env.ROPSTEN_URL,
-			accounts: [process.env.PRIVATE_KEY],
+		goerli: {
+			url: process.env.REACT_APP_RPC_PROVIDER,
+			accounts: [process.env.REACT_APP_PRIVATE_KEY],
 		},
 	},
 	etherscan: {
-		apiKey: process.env.ETHERSCAN_KEY,
+		apiKey: process.env.REACT_APP_ETHERSCAN_KEY,
 	},
 };

@@ -107,7 +107,7 @@ export default function App() {
 					</div>
 					<div className="splashInfo">
 						<p>
-							Connect to the ropsten test network to see the voting information
+							Connect to the Goerli test network to see the voting information
 						</p>
 					</div>
 				</div>
@@ -127,7 +127,7 @@ export default function App() {
 								pick={pick}
 								setPick={setPick}
 							/>
-							{loggedIn === true ? homePage() : splashPage()}
+							{loggedIn ? homePage() : splashPage()}
 						</div>
 					</div>
 				</LoaderContext.Provider>

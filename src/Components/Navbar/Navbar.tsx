@@ -22,11 +22,11 @@ export default function Navbar({
 	const [userBalance, setUserBalance] = useState<string>("");
 
 	const connectNetwork = async () => {
-		const chainId = 3; //ropsten
+		const chainId = 5; //goerli
 		if (window.ethereum.networkVersion !== chainId) {
 			await window.ethereum.request({
 				method: "wallet_switchEthereumChain",
-				params: [{ chainId: "0x3" }],
+				params: [{ chainId: "0x5" }],
 			});
 
 			setLoggedIn(true);
